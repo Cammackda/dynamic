@@ -82,4 +82,11 @@
     padding-top: 5%;
     width: 12%;
 
+    .dark h2 {
+        color: turquoise;
+        }
+
+}
+::backdrop{
+    color: #333;
 }
