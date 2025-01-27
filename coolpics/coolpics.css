@@ -15,26 +15,29 @@ img {
 --secondary-font: Mooli, san-serif;
 }
 
+header{
+  text-align: center;
+  display: block;
+}
+
 body {
     font-family: var(--primary-font);
     font-size: 1.2em;
   }
 
-
-  a:link,
-  a:visited {
+a:link,a:visited {
     color: var(--accent-color);
   }
 
-  button{
-    all: unset;
-  }
+button{
+  all: unset;
+}
 
-  header,footer{
-    background-color: #52489c;
-    text-align: center;
-    display: block;
-  }
+header,footer{
+  background-color: #52489c;
+  text-align: center;
+  display: block;
+}
 
 .words{
   text-align: center;
@@ -54,7 +57,7 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .gallery {
         grid-template-columns: repeat(1, 1fr);
     }
