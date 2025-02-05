@@ -55,6 +55,10 @@ header,footer{
 
 }
 
+.hide{
+  display: none;
+}
+
 @media (max-width: 700) {
   .gallery {
     grid-template-columns: repeat(1, 1fr);
