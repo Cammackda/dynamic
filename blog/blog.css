@@ -16,10 +16,23 @@ ul{
     text-align: right;
     grid-template-columns: 3;
     grid-template-rows: auto;
+    display: flex;
+    text-align: right;
+    padding-inline: 1px
+    ;
 
 }
 
+img{
+    align-content: center;
+    display: flex;
+}
 
+main{
+    grid-template-columns: 3fr;
+    grid-template-rows: auto;
+
+}
 
 
 section{
@@ -31,8 +44,19 @@ section{
 
 p{
     grid-template-columns: (3fr,1_);
+    padding-right: 70%;
 }
 
 img{
     grid-template-columns: (3fr,2);
+}
+
+.skiptocontent a {
+	/* set the element to absolute positioning */
+	/* move it off screen */
+	/* Make sure it will be on the left edge of the screen */
+	/* Change the background and color to something that stands out */
+}
+.skiptocontent a:focus {
+	/* Move it back on when focused */
 }
