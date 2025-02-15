@@ -26,4 +26,23 @@ const articles = [
     }
 ]
 
+const mainContent = document.querySelector('#main-content')
 
+function renderArticles(article) {
+    return `<article class ="book">
+            <div>${article.date}</div>
+            <div>${article.ages}</div>
+            <div>${article.genre}</div>
+            <div>${article.stars}</div>
+            <h2>July 5, 2022 10-14 Fantasy **** Septimus Heap Book One: Magyk</h2>
+            <section>
+                Septimus Heap Book One: Magyk
+                <img src="${article.imgSRC}" alt="${article.imgALT}">
+            <p>${article.description}</p>
+            </section>
+        </article>`
+}
+
+articles.map(renderArticle)
+
+mainContent.innerHTML = article.map(renderArticles).join("")

@@ -4,6 +4,7 @@ background{
 
 main{
     grid-template-columns: 3;
+    grid-template-rows: 2;
 }
 
 h1,h2{
@@ -48,6 +49,13 @@ p{
     grid-template-columns: (3fr,1_);
    
     text-align: center;
+}
+
+.book {
+    min-width: none;
+    display: grid;
+    grid-template-columns: 20%;
+    
 }
 
 img{
