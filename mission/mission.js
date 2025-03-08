@@ -7,14 +7,18 @@ function changeTheme() {
 // The current value is conveniently found in themeSelector.value!
 console.log(theme.value)
 // if the value is dark then:
+
 // add the dark class to the body
 // change the source of the logo img to point to the white logo.
 // otherwise
 // remove the dark class
 // make sure the logo src is the blue logo.
-if (theme === "dark") {
-    logo.src = "byui-logo_white (1).png"
+if (theme.value === "dark") {
+    
+    console.log("dark")
+    logo.src = "byui-dark.png"
 } else {
+    console.log("dark")
     logo.src = "byui.webp";
 }
 }
@@ -24,4 +28,4 @@ if (theme === "dark") {
 
 // add an event listener to the themeSelector element here.
 // Use the changeTheme function as the event handler function.
-theme.addEventListener('change', changeTheme());
+theme.addEventListener('change', changeTheme);

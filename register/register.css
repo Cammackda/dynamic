@@ -67,6 +67,13 @@ textarea {
     padding: 5px;
 }
 
+.participants {
+    display:groid;
+    grid-template-columns: 1fr;
+    gap: 1rem
+}
+
+
 .item:hover p,
 .item:hover i,
 .question:hover p,
@@ -181,5 +188,14 @@ button:hover {
 @media (max-width: 568px) {
     .columns div {
         width: 100%;
+    }
+}
+
+@media (min-width: 1023px) {
+    .participants {
+        grid-template-columns: 1fr 1fr;
+    }
+    #add {
+        grid-column: span 2;
     }
 }
