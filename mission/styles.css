@@ -81,19 +81,35 @@
     margin-left: 0,auto;
 }
 
-.dark h2 {
+.dark p, .dark h1 {
     color: rgb(255, 255, 255);
     }
-    
+
+.dark{
+    background-color: #333;
+}
+
+.dark h2{
+    color: aqua;
+}
 
 #img{
     padding-left: 43%;
     padding-top: 5%;
-    width: 12%;
-
-    
-
+    width: 12%; 
+    padding-bottom: 5%;
 }
+
+.container{
+    border: 1px solid black;
+    margin: 10%;
+    
+}
+
+.dark .container{
+    border: 1px solid rgb(255, 255, 255);
+}
+
 ::backdrop{
     color: #333;
 }

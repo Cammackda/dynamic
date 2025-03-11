@@ -9,6 +9,7 @@ console.log(theme.value)
 // if the value is dark then:
 
 // add the dark class to the body
+body = document.querySelector('body')
 // change the source of the logo img to point to the white logo.
 // otherwise
 // remove the dark class
@@ -17,10 +18,14 @@ if (theme.value === "dark") {
     
     console.log("dark")
     logo.src = "byui-dark.png"
+    body.classList.add("dark")
 } else {
-    console.log("dark")
-    logo.src = "byui.webp";
+    console.log("light")
+    logo.src = "byui.webp"
+    body.classList.remove("dark")
+    ;
 }
+
 }
 
 

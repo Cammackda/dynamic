@@ -1,0 +1,11 @@
+.front{
+    display: flex;
+    padding: 5%;
+    border: 1px black;
+}
+
+.basic{
+    align-items: center;
+}
+
+
