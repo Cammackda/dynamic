@@ -1,6 +1,7 @@
+
 function participanyTemplate(count) {
     return `<section class="participant1">
-                <p>Participant 1</p>
+                <p>Participant ${count}</p>
                 <div class="item">
                     <label for="fname"> First Name<span>*</span></label>
                  <input id="fname" type="text" name="fname" value="" required />
@@ -42,8 +43,15 @@ function participanyTemplate(count) {
 function addParticipant() {
     participanyCount++;
      //get add button
-    document.querySelector("$add").insertAdjacentHTML("beforebegin", participanyTemplate(participanyCount));
+    document.querySelector("#add").insertAdjacentHTML("beforebegin", participanyTemplate(participanyCount));
 }
+
+function submitForm(event) {
+    event.preventDefault();
+    let total = totalFees()
+    let summary = document.querySelector("#summary").innerHTML = successTemplate(info)
+    console.log(summary)
+    }
 
 function successTemplate(info) {
     return `<h2>Camp Registration Summary</h2>
@@ -51,16 +59,20 @@ function successTemplate(info) {
         <p>Number of Participants: ${info.totalParticipants}</p>
         <p>Total Cost: $${info.totalFees}</p>`;
 }
+
 function totalFees() {
     let feeElements = document.querySelectorAll("[id^=fee]");
+    
+    feeElements = [...feeElements];
+    console.log(feeElements)
+    
+    
 }
-
-feeElements = [...feeElements];
-
 let total = 0;
-
 let participanyCount = 1;
+
+
 
 document.querySelector("#add").addEventListener("click", addParticipant);
 
-document.querySelector("#submitButton").addEventListener("click, submitForm");
+document.querySelector("#submitButton").addEventListener("click", submitForm);

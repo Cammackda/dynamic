@@ -37,6 +37,10 @@ button{
   all: unset;
 }
 
+h1{
+  padding-top: 2%;
+}
+ 
 header,footer{
   background-color: #52489c;
   text-align: center;
@@ -50,29 +54,44 @@ header,footer{
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 4 equal columns */
+  grid-template-columns: repeat(1, 1fr); /* 4 equal columns */
   gap: 10px;
 
+}
+
+.navi a{
+  padding: 5%;
+}
+
+.navi{
+  color: var(--text-light);
+  display: none;
+  margin: 2% 20%;
 }
 
 .hide{
   display: none;
 }
 
-@media (max-width: 700) {
+@media (min-width: 700px) {
   .gallery {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  header{
-    a{
-      display: none;
-    }
+  
   }
-}
 
-@media (max-width: 1000px) {
+
+@media (min-width: 1000px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .navi{
+      display: flex;
+      justify-content: space-around ;
+
+    }
+    #menu{
+      display: none;
     }
 }
 
