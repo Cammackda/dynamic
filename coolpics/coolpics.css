@@ -69,8 +69,37 @@ header,footer{
   margin: 2% 20%;
 }
 
+.viewer{
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns:  1fr;
+  color: var(--text-light);
+  /* max-width: 100%; */
+}
+
+.close-viewer{
+  text-align: right;
+  
+}
+
+.viewer img{
+  justify-self: center;
+  max-width: 80%;
+  padding: 5%;
+  
+  
+  
+}
+
 .hide{
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around ;
 }
 
 @media (min-width: 700px) {
@@ -90,8 +119,18 @@ header,footer{
       justify-content: space-around ;
 
     }
-    #menu{
+
+    .menu{
       display: none;
+    }
+
+    .viewer {
+      margin: 5%;
+
+    }
+
+    .viewer img{
+      max-height: 50%;
     }
 }
 
