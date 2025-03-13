@@ -1,8 +1,21 @@
+function handleResize() {
+  const menu = document.querySelector(".menu");
+  if (window.innerWidth > 1000) {
+    menu.classList.add("hide");
+  } else {
+    menu.classList.remove("hide");
+  }
+}
+
+handleResize();
+window.addEventListener("resize", handleResize);
+
+
 const menuButton = document.querySelector(".menu");
 
 function toggleMenu() {
   const menu = document.querySelector(".navi");
-  menu.classList.toggle("hide")
+  menu.classList.toggle("show")
 }
 
 menuButton.addEventListener("click", toggleMenu);
