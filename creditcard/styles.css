@@ -4,8 +4,30 @@
     border: 1px black;
 }
 
+body{
+    grid: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
 .basic{
     align-items: center;
+}
+
+
+h2{
+
+}
+
+.cards{
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+p{
+
 }
 
 

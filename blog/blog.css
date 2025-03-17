@@ -4,24 +4,43 @@ background{
 
 main{
     grid-template-columns: 3;
-    grid-template-rows: 2;
+    grid-template-rows: 3;
 }
 
 h1,h2{
     text-align: center;
 }
 
-ul{
+
+
+h2{
+    color: rgb(196, 30, 30)
+}
+
+.navi{
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     grid-template-columns: 3;
     grid-template-rows: auto;
-    display: flex;
+    grid-column: auto;
     text-align: right;
-    padding-inline: 1px
-    ;
+    padding-inline: 1px;
+    flex-direction: row;
+    color:red ;
+    
 
+}
+
+article{
+    justify-content: center;
+    grid-column: 2/3;
+}
+
+div{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    grid-column: 1/2;
 }
 
 img{
@@ -36,6 +55,7 @@ main{
     grid-template-rows: auto;
 
 }
+
 
 
 section{
@@ -63,6 +83,9 @@ img{
 }
 
 .skiptocontent a {
+    position: absolute;
+    justify-content: left;
+    color: red;
 	/* set the element to absolute positioning */
 	/* move it off screen */
 	/* Make sure it will be on the left edge of the screen */
